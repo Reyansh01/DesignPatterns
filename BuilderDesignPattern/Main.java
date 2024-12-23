@@ -10,4 +10,18 @@ public class Main {
         System.out.println(carDTO2.getWheels());
     }
 
+    /*
+     * 1. It is a creational design pattern.
+     * 
+     * ADVANTAGES:
+     * 1. Simplifies complex object creation by making parameters optional.
+     * 2. Makes the code more readable.
+     * 3. It supports immutable objects to be created.
+     * 
+     * DISADVANTAGES:
+     * 1. Intoruces additional classes or interfaces which increases the code complexity.
+     * 2. Not suitable for simple objects or simple object construction.
+     * 3. Can lead to boiler-plate code when implementing multiple builders for same class.
+     */
+
 }
