@@ -14,7 +14,9 @@ public class Single {
 
     public static Single getInstance(String name, int age) {
         if(single == null) {
-            single = new Single(name, age);
+            synchronized(Single.class) { // synchronized and thread safe singleton design pattern..
+                single = new Single(name, age);
+            }
         }
         return single;
     }
