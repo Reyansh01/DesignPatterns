@@ -21,7 +21,7 @@ public class Main {
      * 2. Each strategy is responsible for a single behavior i.e. follows SRP.
      * 3. Supports Open/Closed principle i.e. we can introduce new strategies without modifying the exisiting ones.
      * 4. Seperates the code for different algorithms , reducing dependencies.
-     * 5. Strategies can bwe reused across multiple contexts or applications.
+     * 5. Strategies can be reused across multiple contexts or applications.
      * 
      * DISADVANTAGES:
      * 1. For every algorithm/strategy a new class is created.

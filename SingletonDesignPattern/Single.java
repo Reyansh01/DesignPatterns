@@ -38,3 +38,22 @@ public class Single {
     }
 
 }
+
+// correct implementations without violating SRP (only instance creation should be there):
+// public class Single {
+    
+//     private static Single single;
+
+//     private Single() {
+//     }
+
+//     public static Single getInstance(String name, int age) {
+//         if(single == null) {
+//             synchronized(Single.class) { // synchronized and thread safe singleton design pattern..
+//                 single = new Single(name, age);
+//             }
+//         }
+//         return single;
+//     }
+
+// }

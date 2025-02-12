@@ -31,6 +31,9 @@ public class Main {
      *      b. Performing its primary function: Doing the work it is designed for (eg -> managing configs, logging etc).
      *      This is bad because any change in the instance management logic (eg. adding thread safety) could affect
      *      the class's primary functionality and vice versa.
+     *   This implementation also violates SRP as:
+     *      ❌ Your current Singleton violates SRP because it manages instance creation & holds data (getter setter).
+     *      ✅ The better approach is to separate data storage from instance management.
      */
 
 }
